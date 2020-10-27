@@ -1,0 +1,48 @@
+.groupBody {
+  width: 98%;
+  margin: auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+.groupButton {
+  align-self: center;
+  background-color: #ea5455;
+  color: white;
+  text-align: center;
+  border: none;
+  height: 30px;
+  padding: 0px 30px;
+}
+
+.tableContainer,
+.groupTable {
+  width: 100%;
+}
+
+.thead {
+  background-color: #929aab;
+  text-align: center;
+}
+
+.tableBody {
+  height: 70px;
+  border: 1px solid #929aab;
+  border-top: none;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.tbody {
+  background-color: #eeeeee;
+  width: 80px;
+  height: 25px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
