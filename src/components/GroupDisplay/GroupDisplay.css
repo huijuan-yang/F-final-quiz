@@ -1,5 +1,5 @@
 .groupBody {
-  width: 98%;
+  width: 96%;
   margin: auto;
 }
 
@@ -26,6 +26,7 @@
 
 .thead {
   background-color: #929aab;
+  color: white;
   text-align: center;
 }
 
@@ -40,6 +41,7 @@
 
 .tbody {
   background-color: #eeeeee;
+  color: #393e46;
   width: 80px;
   height: 25px;
   display: table-cell;
