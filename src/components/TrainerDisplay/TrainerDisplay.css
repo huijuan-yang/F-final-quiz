@@ -1,0 +1,31 @@
+.trainerBody {
+  width: 96%;
+  margin: auto;
+  padding: 20px 0 0 0;
+}
+
+.trainerDisplayCell {
+  width: 100%;
+  height: fit-content;
+  display: inline-flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 3%;
+}
+
+.trainer {
+  background-color: #eeeeee;
+  color: #393e46;
+  width: 100px;
+  height: 20px;
+  display: table-cell;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.addButton {
+  width: 100px;
+  height: 20px;
+  border: 1px solid #929aab;
+  color: #393e46;
+}
