@@ -1,10 +1,10 @@
-.memberBody {
+.traineeBody {
   width: 96%;
   margin: auto;
   padding: 20px 0;
 }
 
-.memberDisplayCell {
+.traineeDisplayCell {
   width: 100%;
   height: fit-content;
   display: inline-flex;
@@ -13,7 +13,7 @@
   gap: 3%;
 }
 
-.member {
+.trainee {
   background-color: #eeeeee;
   color: #393e46;
   width: 100px;

@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import './App.scss';
 import GroupDisplay from '../components/GroupDisplay/GroupDisplay';
-import MemberDisplay from '../components/MemberDisplay/MemberDisplay';
+import TraineeDisplay from '../components/TraineeDisplay/TraineeDisplay';
 
 class App extends Component {
   render() {
     return (
       <div data-testid="app" className="App">
         <GroupDisplay />
-        <MemberDisplay />
+        <TraineeDisplay />
       </div>
     );
   }
