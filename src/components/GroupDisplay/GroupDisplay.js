@@ -10,10 +10,15 @@ class GroupDisplay extends React.Component {
     };
   }
 
-  async componentDidMount() {
+  // async componentDidMount() {
+  //   const groupList = await getAllGroups();
+  //   this.setState({ groups: groupList });
+  // }
+
+  shuffleAll = async () => {
     const groupList = await getAllGroups();
     this.setState({ groups: groupList });
-  }
+  };
 
   render() {
     const { groups } = this.state;
@@ -22,7 +27,14 @@ class GroupDisplay extends React.Component {
         <table className="groupTable" key={group.groupId}>
           <thead className="tableHead">
             <tr className="thead">
-              <td>{group.groupName}</td>
+              <td className="headerContainer">
+                {group.groupName}
+                {group.groupTrainers.map((trainer) => (
+                  <tr className="trainerTag" key={trainer.id}>
+                    {trainer.id}. {trainer.name}
+                  </tr>
+                ))}
+              </td>
             </tr>
           </thead>
           <tbody className="tableBody">
@@ -42,7 +54,7 @@ class GroupDisplay extends React.Component {
       <div className="groupBody">
         <nav className="nav">
           <h3>分组列表</h3>
-          <button type="button" className="groupButton">
+          <button type="button" className="groupButton" onClick={this.shuffleAll}>
             分组学员
           </button>
         </nav>
