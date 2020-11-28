@@ -1,6 +1,6 @@
 import React from 'react';
 import './TrainerDisplay.css';
-import getAllTrainers from '../../api/TrainerApi';
+import getAllUngroupedTrainers from '../../api/UngroupedTrainerApi';
 
 class TrainerDisplay extends React.Component {
   constructor(props) {
@@ -11,7 +11,7 @@ class TrainerDisplay extends React.Component {
   }
 
   async componentDidMount() {
-    const trainerList = await getAllTrainers();
+    const trainerList = await getAllUngroupedTrainers();
     this.setState({ trainers: trainerList });
   }
 

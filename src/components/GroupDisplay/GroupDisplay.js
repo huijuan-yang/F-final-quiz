@@ -10,11 +10,6 @@ class GroupDisplay extends React.Component {
     };
   }
 
-  // async componentDidMount() {
-  //   const groupList = await getAllGroups();
-  //   this.setState({ groups: groupList });
-  // }
-
   shuffleAll = async () => {
     const groupList = await getAllGroups();
     this.setState({ groups: groupList });
