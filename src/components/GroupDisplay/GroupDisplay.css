@@ -24,10 +24,14 @@
   width: 100%;
 }
 
-.thead {
+.tableHead {
   background-color: #929aab;
   color: white;
   text-align: center;
+}
+
+.thead {
+  height: 50px;
 }
 
 .tableBody {
@@ -37,6 +41,10 @@
   display: flex;
   align-items: center;
   padding: 0 20px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 3%;
+  text-align: center;
 }
 
 .tbody {
@@ -46,5 +54,4 @@
   height: 25px;
   display: table-cell;
   text-align: center;
-  vertical-align: middle;
 }

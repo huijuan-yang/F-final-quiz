@@ -19,7 +19,7 @@ class TrainerDisplay extends React.Component {
     const { trainers } = this.state;
     const trainerDisplayList = trainers.map((trainer) => {
       return (
-        <div className="trainer">
+        <div className="trainer" key={trainer.id}>
           {trainer.id}. {trainer.name}
         </div>
       );
