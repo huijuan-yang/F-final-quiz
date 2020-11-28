@@ -19,8 +19,13 @@ class TraineeDisplay extends React.Component {
     const { trainees } = this.state;
     const traineeDisplayList = trainees.map((trainee) => {
       return (
-        <div className="trainee" key={trainee.id}>
-          {trainee.id}. {trainee.name}
+        <div className="tagContainer">
+          <div className="trainee" key={trainee.id}>
+            {trainee.id}. {trainee.name}
+          </div>
+          <button type="button" className="deleteButton">
+            X
+          </button>
         </div>
       );
     });

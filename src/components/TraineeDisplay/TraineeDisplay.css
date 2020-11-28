@@ -10,7 +10,7 @@
   display: inline-flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  gap: 3%;
+  gap: 5%;
 }
 
 .trainee {
@@ -28,4 +28,20 @@
   height: 20px;
   border: 1px solid #929aab;
   color: #393e46;
+}
+
+.tagContainer {
+  display: flex;
+}
+
+.deleteButton {
+  height: 20px;
+  display: none;
+}
+
+.trainee:hover + .deleteButton {
+  display: inline-block;
+  color: white;
+  background-color: #ea5455;
+  border: none;
 }
